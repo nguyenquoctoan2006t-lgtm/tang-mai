@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f5">
+<title>Món quà nhỏ dành cho Tuyết Mai 💗</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap');
+:root{--pink:#ff5c9a;--deep:#c52c6b;--cream:#fff8fb;--text:#71334f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;overflow-x:hidden;font-family:'Nunito',sans-serif;color:var(--text);background:linear-gradient(135deg,#fff7fb,#ffe3ef 48%,#fff4f8)}
+#petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:5}
+.petal{position:absolute;top:-12vh;animation:fall linear forwards;opacity:.85;filter:drop-shadow(0 3px 4px #d94d8030)}
+@keyframes fall{to{transform:translate3d(var(--drift),115vh,0) rotate(720deg);opacity:.12}}
+.glow{position:fixed;width:300px;height:300px;border-radius:50%;filter:blur(65px);opacity:.38;pointer-events:none}
+.glow.one{background:#ff9bc2;top:-100px;left:-80px}.glow.two{background:#ffc4a8;right:-100px;bottom:-100px}
+main{position:relative;z-index:1;width:min(920px,92%);margin:auto;padding:28px 0 55px}
+.topline{text-align:center;font-size:.85rem;letter-spacing:3px;text-transform:uppercase;color:#bd5a81;font-weight:800}
+.hero{text-align:center;padding:28px 12px 20px}
+.flower-crown{font-size:clamp(2rem,6vw,4rem);letter-spacing:8px;animation:sway 3s ease-in-out infinite;display:block}
+@keyframes sway{0%,100%{transform:rotate(-2deg) translateY(0)}50%{transform:rotate(2deg) translateY(-7px)}}
+h1{font-family:'Dancing Script',cursive;font-size:clamp(3.4rem,10vw,6.5rem);line-height:1;margin:16px 0 10px;color:var(--deep);text-shadow:0 5px 0 #fff,0 10px 25px #d9427d24}
+.subtitle{font-size:clamp(1rem,3vw,1.2rem);margin:0 auto;max-width:570px;line-height:1.8}
+.pill{display:inline-block;margin-top:22px;padding:10px 18px;border:1px solid #ffc0d7;border-radius:999px;background:#ffffffa8;box-shadow:0 8px 25px #d74e8212}
+.card{background:#ffffffc9;border:1px solid #fff;box-shadow:0 18px 55px #b83d701c;border-radius:28px;padding:clamp(22px,5vw,42px);margin:24px auto;backdrop-filter:blur(10px)}
+.card h2{font-family:'Dancing Script',cursive;font-size:clamp(2rem,6vw,3rem);color:#c52c6b;text-align:center;margin:0 0 16px}
+.flower-row{text-align:center;font-size:2rem;letter-spacing:6px;margin:12px 0}
+.message{font-size:1.06rem;line-height:2;text-align:center;white-space:pre-line}
+.signature{font-family:'Dancing Script',cursive;font-size:2rem;text-align:right;color:#c52c6b;margin-top:18px}
+.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:22px 0}
+button{font:800 1rem 'Nunito',sans-serif;border:0;border-radius:999px;padding:14px 23px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+button:hover{transform:translateY(-3px);box-shadow:0 10px 22px #c52c6b30}
+.primary{color:white;background:linear-gradient(135deg,#ff7eae,#d93679)}
+.secondary{color:#b72b65;background:#fff;border:1px solid #ffc0d7}
+.garden{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.flower{min-height:125px;display:grid;place-items:center;border-radius:20px;background:linear-gradient(145deg,#fff,#fff0f6);border:1px solid #ffe0eb;font-size:clamp(2.5rem,7vw,4rem);transition:transform .3s;animation:bob 3s ease-in-out infinite}
+.flower:nth-child(2n){animation-delay:.6s}.flower:nth-child(3n){animation-delay:1.1s}
+.flower:hover{transform:scale(1.06) rotate(-4deg)}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -7px}}
+footer{text-align:center;padding:20px 10px 0;font-size:.9rem;line-height:1.8;color:#a85678}
+.heart{display:inline-block;color:#ff4e8b;animation:heartbeat 1s infinite}
+@keyframes heartbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
+.hidden{display:none}
+#surprise{animation:pop .7s cubic-bezier(.2,.9,.2,1.2)}
+@keyframes pop{from{opacity:0;transform:scale(.85) translateY(15px)}to{opacity:1;transform:scale(1) translateY(0)}}
+@media(max-width:520px){.garden{grid-template-columns:repeat(2,1fr)}.flower{min-height:105px}.topline{letter-spacing:2px;font-size:.72rem}}
+</style>
+</head>
+<body>
+<div class="glow one"></div><div class="glow two"></div>
+<div id="petals" aria-hidden="true"></div>
+<main>
+  <div class="topline">✿ Một món quà nhỏ · 20 tháng 10 ✿</div>
+  <section class="hero">
+    <span class="flower-crown">🌷 🌸 🌼 🌸 🌷</span>
+    <h1>Gửi Tuyết Mai</h1>
+    <p class="subtitle">Có một món quà bé xíu, được gói bằng thật nhiều hoa và một chút chân thành, dành riêng cho cậu. 💗</p>
+    <span class="pill">🌹 Happy Vietnamese Women's Day 🌹</span>
+  </section>
+
+  <section class="card">
+    <div class="flower-row">💐 🌷 💖 🌷 💐</div>
+    <h2>Chúc cậu ngày 20/10 thật xinh</h2>
+    <p class="message">Chúc Tuyết Mai luôn vui vẻ, rạng rỡ và gặp thật nhiều điều dịu dàng trong cuộc sống.
+Mong mỗi ngày của cậu đều có lý do để mỉm cười, có người quan tâm, có những điều nhỏ bé khiến trái tim ấm áp.
+
+Nếu hôm nay có thể gửi cậu một bó hoa, tớ sẽ chọn bó hoa thật lớn — vì cậu xứng đáng nhận được thật nhiều niềm vui, yêu thương và những điều tốt đẹp nhất. 🌷
+
+Cảm ơn cậu vì đã là một Tuyết Mai thật đặc biệt. Chúc cậu luôn tự tin, hạnh phúc và tỏa sáng theo cách của riêng mình nhé!</p>
+    <div class="signature">Thân gửi Tuyết Mai 💌</div>
+    <div class="actions">
+      <button class="primary" id="surpriseBtn">Bấm để mở món quà ✨</button>
+      <button class="secondary" id="musicBtn">♫ Bật nhạc nhẹ</button>
+    </div>
+    <div id="surprise" class="hidden">
+      <div class="flower-row">🌹 🌹 🌹 🌹 🌹</div>
+      <h2>Một vườn hoa dành riêng cho cậu!</h2>
+      <p class="message">Mong những bông hoa này nhắc cậu nhớ rằng: cậu luôn xứng đáng với những điều đẹp đẽ. Chúc Tuyết Mai 20/10 ngập tràn tiếng cười! <span class="heart">♥</span></p>
+      <div class="garden">
+        <div class="flower">🌸</div><div class="flower">🌷</div><div class="flower">🌹</div>
+        <div class="flower">🌼</div><div class="flower">💐</div><div class="flower">🌺</div>
+        <div class="flower">🪻</div><div class="flower">🌻</div><div class="flower">💮</div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    Làm bằng một chút thời gian, thật nhiều hoa và cả tấm lòng <span class="heart">♥</span><br>
+    <span>🌸 Tuyết Mai hãy luôn cười thật tươi nhé! 🌸</span>
+  </footer>
+</main>
+<script>
+const petals = document.getElementById('petals');
+const petalSymbols = ['🌸','🌷','💮','🌼','💕','✿'];
+function makePetal(){
+  const p=document.createElement('span'); p.className='petal';
+  p.textContent=petalSymbols[Math.floor(Math.random()*petalSymbols.length)];
+  p.style.left=Math.random()*100+'vw';
+  p.style.fontSize=(14+Math.random()*22)+'px';
+  p.style.animationDuration=(7+Math.random()*9)+'s';
+  p.style.setProperty('--drift',((Math.random()-.5)*220)+'px');
+  petals.appendChild(p); setTimeout(()=>p.remove(),17000);
+}
+for(let i=0;i<18;i++) setTimeout(makePetal,i*180);
+setInterval(makePetal,480);
+const btn=document.getElementById('surpriseBtn');
+btn.addEventListener('click',()=>{
+  const surprise=document.getElementById('surprise');
+  surprise.classList.remove('hidden');
+  btn.textContent='Món quà đã mở rồi nè 💗';
+  burstHearts();
+  surprise.scrollIntoView({behavior:'smooth',block:'center'});
+});
+function burstHearts(){
+  for(let i=0;i<24;i++){
+    const h=document.createElement('span');h.className='petal';h.textContent=['💗','🌸','✨','🌷'][Math.floor(Math.random()*4)];
+    h.style.left=(35+Math.random()*30)+'vw';h.style.top=(30+Math.random()*30)+'vh';
+    h.style.fontSize=(18+Math.random()*24)+'px';h.style.animationDuration=(2+Math.random()*2)+'s';
+    h.style.setProperty('--drift',((Math.random()-.5)*380)+'px');petals.appendChild(h);setTimeout(()=>h.remove(),5000);
+  }
+}
+// Nhạc tự tạo bằng Web Audio, chỉ phát sau khi người dùng bấm nút.
+let audioCtx=null, playing=false, timer=null, noteIndex=0;
+const notes=[523.25,659.25,783.99,659.25,587.33,698.46,880,698.46];
+function playNote(){
+  if(!playing||!audioCtx)return;
+  const osc=audioCtx.createOscillator(), gain=audioCtx.createGain();
+  osc.type='sine';osc.frequency.value=notes[noteIndex%notes.length];
+  gain.gain.setValueAtTime(.0001,audioCtx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(.07,audioCtx.currentTime+.04);
+  gain.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+.42);
+  osc.connect(gain);gain.connect(audioCtx.destination);osc.start();osc.stop(audioCtx.currentTime+.45);
+  noteIndex++;timer=setTimeout(playNote,430);
+}
+document.getElementById('musicBtn').addEventListener('click',async()=>{
+  const b=document.getElementById('musicBtn');
+  if(!playing){
+    audioCtx=audioCtx||new (window.AudioContext||window.webkitAudioContext)();
+    await audioCtx.resume();playing=true;b.textContent='♫ Tắt nhạc';
+    playNote();
+  }else{playing=false;clearTimeout(timer);b.textContent='♫ Bật nhạc nhẹ';}
+});
+</script>
+</body>
+</html>
